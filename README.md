@@ -1,6 +1,9 @@
 # LeaveUnion
 大学生活委员必备，自动生成学校每周离寝人员名单excel表格
 
+![主页](https://i.loli.net/2020/01/31/gV4ZqJDWOIzoaSH.jpg)
+![主页](https://i.loli.net/2020/01/31/aXKLCEu8cjdBFov.jpg)<br />
+
 # 安装
 1.下载整个repo，上传至网站根目录<br />
 
