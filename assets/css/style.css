@@ -1,0 +1,16 @@
+body {
+    font-family: "Microsoft YaHei";
+    text-align: center;
+}
+
+.header {
+    height: 50px;
+    padding-bottom: 2em;
+}
+
+.box {
+    width: 300px;
+    line-height: 30px;
+    display: block;
+    margin: 0 auto;
+}

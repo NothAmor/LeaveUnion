@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>离寝人员在线填表</title>
+
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+        <!--[if lt IE 9]>
+            <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="header">
+            <h3>离寝人员在线填表</h3>
+        </div>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">离寝人员在线填表</a>
+              </div>
+              <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">填表</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <div class="box">
+            <form action="submit.php" id="information" method="POST">
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon3">姓名：</span>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="填写姓名" maxlength="4" aria-describedby="basic-addon1" minlength="2" required> 
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon3">联系方式：</span>
+                    <input class="form-control" type="number" name="phone" id="phone" placeholder="输入电话号码" minlength="10" maxlength="11" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon3 basic-addon2">所属公寓：</span>
+                    <input class="form-control" type="number" name="building" id="building" placeholder="楼号（小写）" maxlength="3" required>
+                    <span class="input-group-addon" id="basic-addon2">号楼</span>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon3">寝室号：</span>
+                    <input class="form-control" type="number" name="chamber" id="chamber" placeholder="输入寝室号" maxlength="3" max="999" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon3">辅导员姓名：</span>
+                    <input class="form-control" type="text" name="fname" id="fname" placeholder="输入辅导员姓名" minlength="1" maxlength="4" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon3">周五是否离寝?</span>
+                    <input class="form-control" type="text" name="fri_yn" id="fri_yn" value="离寝" minlength="2" maxlength="3" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon3">周六是否离寝?</span>
+                    <input class="form-control" type="text" name="sat_yn" id="sat_yn" value="不离寝" minlength="2" maxlength="3" required>
+                </div>
+
+                <input class="btn btn-success" type="submit" name="submit" id="submit" value="提交" />
+
+
+            </form>
+
+            <nav class="navbar navbar-inverse navbar-fixed-bottom">
+                <div class="container">
+                    <p style="color: white;">Made with ❤ By: <a href="https://www.nothamor.cn" style="color: whitesmoke;">软件四班方一力</a></p>
+                </div>
+              </nav>
+        </div>
+    </body>
+</html>
